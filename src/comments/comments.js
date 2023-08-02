@@ -93,3 +93,39 @@ export const MediaEdit = (props) => (
     </SimpleForm>
   </Edit>
 );
+
+export const MediaAudioShow = (props) => (
+  <Show {...props}>
+    <Datagrid>
+      <TextField source="url" />
+      <EditButton />
+      <DeleteButton />
+    </Datagrid>
+  </Show>
+);
+export const MediaAudioList = (props) => {
+  return (
+    <List {...props}>
+      <Datagrid>
+        <TextField source="url" />
+        <EditButton />
+        <DeleteButton />
+      </Datagrid>
+    </List>
+  );
+};
+export const MediaAudioCreate = (props) => (
+  <Create {...props}>
+    <SimpleForm>
+      <TextInput source="url" />
+    </SimpleForm>
+  </Create>
+);
+
+export const MediaAudioEdit = (props) => (
+  <Edit {...props}>
+    <SimpleForm>
+      <TextInput source="url" />
+    </SimpleForm>
+  </Edit>
+);

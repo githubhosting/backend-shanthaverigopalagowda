@@ -17,6 +17,10 @@ import {
   MediaEdit,
   MediaCreate,
   MediaShow,
+  MediaAudioList,
+  MediaAudioEdit,
+  MediaAudioCreate,
+  MediaAudioShow,
 } from "./comments/comments";
 
 // Optional
@@ -48,6 +52,14 @@ function App() {
         show={MediaShow}
         create={MediaCreate}
         edit={MediaEdit}
+      />
+
+      <Resource
+        name="Media_Audio"
+        list={MediaAudioList}
+        show={MediaAudioShow}
+        create={MediaAudioCreate}
+        edit={MediaAudioEdit}
       />
     </Admin>
   );
